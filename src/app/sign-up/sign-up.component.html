@@ -1,0 +1,16 @@
+<h1 [hidden]="!name">Welcome {{ name }}</h1>
+<h1 [hidden]="name">Please Enter Your Name!</h1>
+<hr />
+<label for="">UserName</label>
+<input type="text" (input)="onNameChanged($event)" />
+
+<label for="">Password</label>
+<input type="password" (input)="onPasswordChanged($event)" />
+
+<label for="">Retype Password</label>
+<input type="password" (input)="onRetypeChanged($event)" />
+
+<hr />
+<h5 [hidden]="validation || !password">Passwords Do Mot Match!!</h5>
+<h5 [hidden]="!validation">Passwords Match!!</h5>
+<hr />
