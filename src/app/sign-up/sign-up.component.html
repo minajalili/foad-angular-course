@@ -3,14 +3,15 @@
 <hr />
 <label for="">UserName</label>
 <input type="text" (input)="onNameChanged($event)" />
-
+<br />
+<br />
 <label for="">Password</label>
 <input type="password" (input)="onPasswordChanged($event)" />
-
+<br />
+<br />
 <label for="">Retype Password</label>
 <input type="password" (input)="onRetypeChanged($event)" />
-
+<br />
 <hr />
 <h5 [hidden]="validation || !password">Passwords Do Mot Match!!</h5>
 <h5 [hidden]="!validation">Passwords Match!!</h5>
-<hr />
