@@ -7,9 +7,10 @@ import { DirectivesComponent } from './directives/directives.component';
 import { SwitchCase1Component } from './switch-case1/switch-case1.component';
 import { SwitchCase2Component } from './switch-case2/switch-case2.component';
 import { InputOutputIntroComponent } from './input-output-intro/input-output-intro.component';
+import { StarComponent } from './input-output-intro/star/star.component';
 
 @NgModule({
-  declarations: [AppComponent, SignUpComponent, DirectivesComponent, SwitchCase1Component, SwitchCase2Component, InputOutputIntroComponent],
+  declarations: [AppComponent, SignUpComponent, DirectivesComponent, SwitchCase1Component, SwitchCase2Component, InputOutputIntroComponent, StarComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
