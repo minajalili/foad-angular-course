@@ -1,0 +1,31 @@
+<br />
+<p *ngIf="isShown; else elseCondition">directives conditons works!</p>
+<ng-template #elseCondition>
+  <p>Another Condition!!</p>
+</ng-template>
+
+<!-- <ng-template [ngIf]="isShown">
+  <h1>test</h1>
+</ng-template> -->
+
+<br /><br />
+
+<!-- <p *ngFor="let user of users; let i = index">{{ i + ": " + user }}</p> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary" (click)="addNewUser()">
+        Add New User
+      </button>
+      <p *ngFor="let user of usersObj; let i = index; trackBy: trackByFunc">
+        {{ user.id + ": " + user.name }}
+      </p>
+    </div>
+  </div>
+</div>
+<br /><br />
+<div [ngSwitch]="switchcase">
+  <app-switch-case1 *ngSwitchCase="'a'"></app-switch-case1>
+  <app-switch-case2 *ngSwitchCase="'b'"></app-switch-case2>
+</div>
