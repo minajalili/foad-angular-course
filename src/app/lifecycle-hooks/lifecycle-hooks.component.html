@@ -1,0 +1,15 @@
+<p #par>lifecycle-hooks works!</p>
+
+<div style="background-color: green">
+  <ng-content select=".success"></ng-content>
+</div>
+<div style="background-color: yellow">
+  <ng-content select=".warning"></ng-content>
+</div>
+<div style="background-color: red">
+  <ng-content select=".error"></ng-content>
+</div>
+
+<button class="btn btn-primary" (click)="onChangeViewChild()">
+  From Child Change ViewChild
+</button>
