@@ -13,6 +13,7 @@ import { AddUserComponent } from './components-decoupling/add-user/add-user.comp
 import { UsersTableComponent } from './components-decoupling/users-table/users-table.component';
 import { FormsModule } from '@angular/forms';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     AddUserComponent,
     UsersTableComponent,
     LifecycleHooksComponent,
+    StructuralDirectiveComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
