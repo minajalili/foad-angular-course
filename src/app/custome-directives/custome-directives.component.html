@@ -1,0 +1,24 @@
+<br />
+<p class="m-1" appHighlight>custome-directives works!</p>
+<br />
+<label class="form-label m-1" for="">Colorful input: </label>
+<input
+  class="form-control m-1"
+  type="text"
+  appColorful
+  style="width: 50rem; border-width: 0.25rem"
+/>
+<br />
+<br />
+<div
+  *appCarousel="let image; from: images; autoplay: 'yes'; let ctrl = controller"
+>
+  <img class="p-3" style="width: 650px; height: 390px" [src]="image" alt="" />
+  <br />
+  <div style="width: 500px">
+    <button class="btn btn-secondary m-1 ms-3 w-25" (click)="ctrl.prev()">
+      Previous
+    </button>
+    <button class="btn btn-primary m-1 w-25" (click)="ctrl.next()">Next</button>
+  </div>
+</div>

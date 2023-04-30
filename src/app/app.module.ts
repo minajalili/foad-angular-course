@@ -14,6 +14,10 @@ import { UsersTableComponent } from './components-decoupling/users-table/users-t
 import { FormsModule } from '@angular/forms';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
+import { CustomeDirectivesComponent } from './custome-directives/custome-directives.component';
+import { ColorfulDirective } from './custome-directives/colorful.directive';
+import { HighlightDirective } from './custome-directives/highlight.directive';
+import { CarouselDirective } from './custome-directives/carousel.directive';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,10 @@ import { StructuralDirectiveComponent } from './structural-directive/structural-
     UsersTableComponent,
     LifecycleHooksComponent,
     StructuralDirectiveComponent,
+    CustomeDirectivesComponent,
+    ColorfulDirective,
+    HighlightDirective,
+    CarouselDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

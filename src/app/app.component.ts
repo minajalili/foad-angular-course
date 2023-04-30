@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IUser } from './structural-directive/user-interface';
+// import { IUser } from './structural-directive/user-interface';
 
 @Component({
   selector: 'app-root',
@@ -13,31 +13,31 @@ export class AppComponent {
   // public onStarClick(rating: number) {
   //   window.alert(`the rating ${rating} is clicked!`);
   // }
-  user: IUser = {
-    name: 'mina',
-    age: 25,
-  };
+  // user: IUser = {
+  //   name: 'mina',
+  //   age: 25,
+  // };
 
-  users: IUser[] = [
-    {
-      name: 'name',
-      age: 35,
-    },
-    {
-      name: 'name2',
-      age: 50,
-    },
-    {
-      name: 'name3',
-      age: 42,
-    },
-    {
-      name: 'name4',
-      age: 16,
-    },
-    {
-      name: 'name5',
-      age: 27,
-    },
-  ];
+  // users: IUser[] = [
+  //   {
+  //     name: 'name',
+  //     age: 35,
+  //   },
+  //   {
+  //     name: 'name2',
+  //     age: 50,
+  //   },
+  //   {
+  //     name: 'name3',
+  //     age: 42,
+  //   },
+  //   {
+  //     name: 'name4',
+  //     age: 16,
+  //   },
+  //   {
+  //     name: 'name5',
+  //     age: 27,
+  //   },
+  // ];
 }
