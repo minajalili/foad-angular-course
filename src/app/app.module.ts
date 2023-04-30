@@ -18,6 +18,16 @@ import { CustomeDirectivesComponent } from './custome-directives/custome-directi
 import { ColorfulDirective } from './custome-directives/colorful.directive';
 import { HighlightDirective } from './custome-directives/highlight.directive';
 import { CarouselDirective } from './custome-directives/carousel.directive';
+import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+
+//router
+
+const routes: Routes = [
+  { path: '', component: ComponentsDecouplingComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'images', component: CustomeDirectivesComponent },
+];
 
 @NgModule({
   declarations: [
@@ -37,8 +47,9 @@ import { CarouselDirective } from './custome-directives/carousel.directive';
     ColorfulDirective,
     HighlightDirective,
     CarouselDirective,
+    NavbarComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],
 })
