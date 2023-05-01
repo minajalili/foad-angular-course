@@ -5,14 +5,25 @@
       <th scope="col">Email</th>
       <th scope="col">Address</th>
       <th scope="col">Password</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let user of users; let i = index">
       <th scope="row">{{ i + 1 }}</th>
-      <td>{{ user.email }}</td>
+      <td>
+        {{ user.email }}
+      </td>
       <td>{{ user.address }}</td>
       <td>{{ user.password }}</td>
+      <td>
+        <!-- <button class="m-1 btn btn-primary" (click)="onEditRow(user)">
+          Edit
+        </button> -->
+        <button class="m-1 btn btn-danger" (click)="onDeleteRow(user)">
+          Delete
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>

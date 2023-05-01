@@ -1,17 +1,29 @@
 <h1 [hidden]="!name">Welcome {{ name }}</h1>
 <h1 [hidden]="name">Please Enter Your Name!</h1>
 <hr />
-<label for="">UserName</label>
-<input type="text" (input)="onNameChanged($event)" />
-<br />
-<br />
-<label for="">Password</label>
-<input type="password" (input)="onPasswordChanged($event)" />
-<br />
-<br />
-<label for="">Retype Password</label>
-<input type="password" (input)="onRetypeChanged($event)" />
-<br />
-<hr />
+<div class="m-3">
+  <label class="form-group" for="">UserName: </label>
+  <input
+    class="form-control w-25"
+    type="text"
+    (input)="onNameChanged($event)"
+  />
+
+  <label class="form-group" for="">Password: </label>
+  <input
+    class="form-control w-25"
+    type="password"
+    (input)="onPasswordChanged($event)"
+  />
+  <label class="form-group" for="">Retype Password: </label>
+  <input
+    class="form-control w-25"
+    type="password"
+    (input)="onRetypeChanged($event)"
+  />
+</div>
+
 <h5 [hidden]="validation || !password">Passwords Do Mot Match!!</h5>
 <h5 [hidden]="!validation">Passwords Match!!</h5>
+
+<button class="btn btn-primary m-3" (click)="onSignUp()">Sign Up Now!</button>

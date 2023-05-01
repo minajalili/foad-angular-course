@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-up.component.css'],
 })
 export class SignUpComponent {
+  constructor(private router: Router) {}
+
   name: String = '';
   password: string = '';
   repeatpass: string = '';
@@ -22,5 +25,11 @@ export class SignUpComponent {
   onRetypeChanged(e: Event) {
     this.repeatpass = (<HTMLTextAreaElement>e.target).value;
     this.validation = this.password === this.repeatpass ? true : false;
+  }
+
+  onSignUp() {
+    if (this.validation) {
+      this.router.navigate(['/images', this.name]);
+    }
   }
 }

@@ -7,9 +7,16 @@ import { user } from 'src/app/user-iterface';
   styleUrls: ['./users-table.component.css'],
 })
 export class UsersTableComponent {
-  @Input() users: user[] = [
-    // { email: 'test@email.com', address: 'test Ave', password: '123' },
-    // { email: 'test2@email.com', address: 'test2 Ave', password: '12345' },
-    // { email: 'test3@email.com', address: 'test3 Ave', password: '1234567' },
-  ];
+  @Input() users: user[];
+  editToggle: boolean = false;
+
+  onEditRow(user: user) {
+    this.editToggle = true;
+  }
+
+  onDeleteRow(user: user) {
+    console.log(user);
+    const index = this.users.indexOf(user);
+    this.users.splice(index, 1);
+  }
 }

@@ -18,16 +18,11 @@ import { CustomeDirectivesComponent } from './custome-directives/custome-directi
 import { ColorfulDirective } from './custome-directives/colorful.directive';
 import { HighlightDirective } from './custome-directives/highlight.directive';
 import { CarouselDirective } from './custome-directives/carousel.directive';
-import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
-
-//router
-
-const routes: Routes = [
-  { path: '', component: ComponentsDecouplingComponent },
-  { path: 'sign-up', component: SignUpComponent },
-  { path: 'images', component: CustomeDirectivesComponent },
-];
+import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
+import { UserService } from './service/user.service';
 
 @NgModule({
   declarations: [
@@ -48,9 +43,11 @@ const routes: Routes = [
     HighlightDirective,
     CarouselDirective,
     NavbarComponent,
+    NotFoundComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
-  providers: [],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  providers: [UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
