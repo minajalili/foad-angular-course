@@ -1,4 +1,4 @@
-import { user } from '../user-iterface';
+import { user } from '../intefaces/user-iterface';
 
 export class UserService {
   public user: user[] = [

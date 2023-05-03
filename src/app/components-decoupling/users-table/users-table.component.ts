@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { user } from 'src/app/user-iterface';
+import { user } from 'src/app/intefaces/user-iterface';
 
 @Component({
   selector: 'app-users-table',

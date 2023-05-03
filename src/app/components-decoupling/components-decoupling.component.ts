@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { user } from '../user-iterface';
+import { user } from '../intefaces/user-iterface';
 import { UserService } from '../service/user.service';
 
 @Component({

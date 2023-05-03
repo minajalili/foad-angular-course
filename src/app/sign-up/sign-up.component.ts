@@ -29,7 +29,9 @@ export class SignUpComponent {
 
   onSignUp() {
     if (this.validation) {
-      this.router.navigate(['/images', this.name]);
+      console.log(this.name);
+
+      this.router.navigate(['/panel', this.name]);
     }
   }
 }

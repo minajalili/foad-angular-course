@@ -9,6 +9,11 @@ import { ActivatedRoute, Params } from '@angular/router';
 export class CustomeDirectivesComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
+  images: string[] = [
+    './assets/dodge.png',
+    './assets/dodge2.png',
+    './assets/dodge3.png',
+  ];
   userName: string;
 
   ngOnInit(): void {
@@ -17,9 +22,4 @@ export class CustomeDirectivesComponent implements OnInit {
       this.userName = params['userName'];
     });
   }
-  images: string[] = [
-    './assets/dodge.png',
-    './assets/dodge2.png',
-    './assets/dodge3.png',
-  ];
 }

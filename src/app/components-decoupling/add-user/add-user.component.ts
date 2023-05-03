@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { user } from 'src/app/user-iterface';
+import { user } from 'src/app/intefaces/user-iterface';
 
 @Component({
   selector: 'app-add-user',
