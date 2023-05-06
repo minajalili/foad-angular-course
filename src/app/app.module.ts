@@ -25,6 +25,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { UserService } from './service/user.service';
 import { TodoComponent } from './todo/todo.component';
+import { ConvasComponent } from './convas/convas.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { TodoComponent } from './todo/todo.component';
     NotFoundComponent,
     HomeComponent,
     TodoComponent,
+    ConvasComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [UserService],
